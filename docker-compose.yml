@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  # GERENCIADOR DE CONTAINERS
+  portainer:
+    image: portainer/portainer:latest
+    restart: always
+    container_name: portainer
+    ports:
+    - "9000:9000"
+    networks:
+    - intranet
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - portainerdata:/data
+
+# FRONT-END
+  roca_eats:
+    build: "./src/"
+    container_name: roca
+    #image: hpbonfim/roca-eats:latest
+    restart: always
+    ports:
+        - "8100:8100"
+    networks:
+        - intranet
+    entrypoint:
+    - '/usr/local/bin/docker-entrypoint.sh'
+
+networks:
+  intranet:
+    
+volumes:
+  portainerdata:
