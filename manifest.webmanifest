@@ -1,8 +1,8 @@
 {
-  "name": "Roça Eats",
-  "short_name": "Roça Eats",
-  "theme_color": "#3d2d10",
-  "background_color": "#3d2d10",
+  "name": " ",
+  "short_name": " ",
+  "theme_color": "#27221c",
+  "background_color": "#27221c",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
