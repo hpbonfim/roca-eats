@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587150444729,
+  "timestamp": 1587150783203,
   "index": "https://hpbonfim.github.io/roca-eats/index.html",
   "assetGroups": [
     {
@@ -353,10 +353,10 @@
     "https://hpbonfim.github.io/roca-eats/assets/webfonts/fa-solid-900.woff2": "1793dd7561aca64d9751506879d919ade7efe325",
     "https://hpbonfim.github.io/roca-eats/common-es2015.4857dd7367a60053514e.js": "97beb6083a04a4b16efa8129de66274ca8b5265c",
     "https://hpbonfim.github.io/roca-eats/common-es5.4857dd7367a60053514e.js": "b9d6b9480836a24744716205c5c2b4589d9f58e4",
-    "https://hpbonfim.github.io/roca-eats/index.html": "8859733c9c6e638e7822813198341c293eadb880",
+    "https://hpbonfim.github.io/roca-eats/index.html": "812db01f9736a318539a23148c5d07ab090c7bb7",
     "https://hpbonfim.github.io/roca-eats/main-es2015.368353f2e49cf899ef9e.js": "dca14d20a37c1515db4aaf817daa745e1c80edf6",
     "https://hpbonfim.github.io/roca-eats/main-es5.368353f2e49cf899ef9e.js": "70fbb0420c4611b8c882ad6d2911b37cd3148953",
-    "https://hpbonfim.github.io/roca-eats/manifest.webmanifest": "dd28d0bf880ea911e55430b6bc88148c3ca7a7c0",
+    "https://hpbonfim.github.io/roca-eats/manifest.webmanifest": "31b7236bb9f78db8842822fad59c4c8f890a32c0",
     "https://hpbonfim.github.io/roca-eats/polyfills-es2015.c1f142d23713235da53a.js": "d09f5d54be882e501e006c5c097486eef3dbb188",
     "https://hpbonfim.github.io/roca-eats/polyfills-es5.3f81798dab399e8c607f.js": "c1691e038ec6ce2ed635fe4ad19bc62a4d7d8598",
     "https://hpbonfim.github.io/roca-eats/runtime-es2015.871a0edd6f6d8fe569a2.js": "062aea8a5911f03b66ff2b08fd8604ea4c4b363a",
