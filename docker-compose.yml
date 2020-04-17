@@ -26,6 +26,7 @@ services:
     entrypoint:
     - '/usr/local/bin/docker-entrypoint.sh'
 
+
 networks:
   intranet:
     
