@@ -9,7 +9,7 @@ export class HomePage {
 
   constructor() {}
   // textos inicio
-  tituloHeader: string = "SEMEANDO O MELHOR DE NÓS!";
+  tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
   
   // textos projeto
   tituloProjeto: string = "PROJETO";
@@ -25,38 +25,43 @@ export class HomePage {
   textoTerceiroCard: string = "Desenvolver texto para a imagem escolhida ou tema";
 
   // textos detalhes
-  tituloDetalhes: string = "MISSÃO";
-  subtituloDetalhes: string = "A união faz a força, vamos juntos lutar essa guerra!.";
-  textoDescricaoDetalhes: string = "Queremos diminuir o impacto que o novo coronavirus COVID-19 está fazendo em nossas vidas.";
-  primeiroTopicoDetalhes: string = "detalhes da missão 1";
-  segundoTopicoDetalhes: string = "detalhes da missão 2";
+  tituloDetalhesMissao: string = "MISSÃO";
+  subtituloDetalhesMissao: string = "Combater a fome e a miséria de populações em situação de vulnerabilidade social com ênfase na doação de alimentos derivados no campo.";
+  textoDescricaoDetalhesMissao: string = "- Estamos fazendo o nosso melhor para ajudar!";
 
+  tituloDetalhesVisao: string = "VISÃO";
+  subtituloDetalhesVisao: string = "Alcançar pessoas em situação de vulnerabilidade alimentar, encurtando nossas distâncias, entre necessidade e possibilidade em busca de um futuro melhor após a pandemia";
+  textoDescricaoDetalhesVisao: string = "- Juntos somos mais fortes!";
+
+  tituloDetalhesValores: string = "VALORES";
+  subtituloDetalhesValores: string = "Aproximando as pessoas, valorizando a mão de obra agrícola, expandido com responsabilidade o alcance a uma alimentação saudável para a sociedade em situação de vulnerabilidade em pról da contribuição comunitária.";
+  textoDescricaoDetalhesValores: string = "";
+  primeiroTopicoDetalhesValores: string = "Dignidade alimentícia";
+  segundoTopicoDetalhesValores: string = "Alimentação Saudável";
+  terceiroTopicoDetalhesValores: string = "Valorização Humanitária";
+  quartoTopicoDetalhesValores: string = "Ética e Humildade";
 
   // textos midia
   tituloMidia: string = "MÍDIA";
   subtituloMidia: string = "Estamos fazendo a diferença!";
   textoDescricaoMidia: string = "Veja o que estão falando do projeto";
 
-  tituloAbaPrimeiraMidia: string = "TITULO ABA 1";
-  tituloPrimeiraMidia: string = "TITULO REPORTAGEM 1";
-  textoDescricaoPrimeiraMidia: string = "texto descritivo sobre a mídia";
-  primeiroTopicoPrimeiraMidia: string = "palavra/frase chave 1";
-  segundoTopicoPrimeiraMidia: string = "palavra/frase chave 2";
-  terceiroTopicoPrimeiraMidia: string = "palavra/frase chave 3";
+  tituloAbaPrimeiraMidia: string = "GLOBO PLAY";
+  tituloPrimeiraMidia: string = "Diário TV 1ª Edição";
+  textoDescricaoPrimeiraMidia: string = "Produtores rurais adotam medidas para evitar desperdício de produtos";
+  primeiroTopicoPrimeiraMidia: string = "Exibição em 4 Abr 2020";
 
-  tituloAbaSegundaMidia: string = "TITULO ABA 2";
-  tituloSegundaMidia: string = "TITULO REPORTAGEM 2";
-  textoDescricaoSegundaMidia: string = "texto descritivo sobre a mídia";
-  primeiroTopicoSegundaMidia: string = "palavra/frase chave 1";
-  segundoTopicoSegundaMidia: string = "palavra/frase chave 2";
-  terceiroTopicoSegundaMidia: string = "palavra/frase chave 3";
+  tituloAbaSegundaMidia: string = "O DIÁRIO";
+  tituloSegundaMidia: string = "O Diário de Mogi";
+  textoDescricaoSegundaMidia: string = "Agricultores de Quatinga doam parte da safra após fechamento de feiras";
+  primeiroTopicoSegundaMidia: string = "Exibição em 1 de abril de 2020";
 
-  tituloAbaTerceiraMidia: string = "TITULO ABA 3";
-  tituloTerceiraMidia: string = "TITULO REPORTAGEM 3";
-  textoDescricaoTerceiraMidia: string = "texto descritivo sobre a mídia";
-  primeiroTopicoTerceiraMidia: string = "palavra/frase chave 1";
-  segundoTopicoTerceiraMidia: string = "palavra/frase chave 2";
-  terceiroTopicoTerceiraMidia: string = "palavra/frase chave 3";
+
+  tituloAbaTerceiraMidia: string = "YOUTUBE";
+  tituloTerceiraMidia: string = "Agro Meeting 1";
+  textoDescricaoTerceiraMidia: string = "As ações que estão sendo feitas em prol dos pequenos agricultores";
+  primeiroTopicoTerceiraMidia: string = "Palestrante: Simone Silotti – Pesquisadora Chefe – Inteligência no Agro";
+  segundoTopicoTerceiraMidia: string = "Exibição em 14/04 às 15H";
 
  
 
