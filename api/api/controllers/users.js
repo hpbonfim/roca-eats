@@ -1,8 +1,9 @@
 const { v4: uuidv4 } = require('uuid');
+const fs = require('fs');
 
 module.exports = app => {
 
-  const userTable = app.data.users;
+  let userTable = app.data.users;
   const controller = {};
 
   const {
@@ -15,8 +16,14 @@ module.exports = app => {
       password
     } = req.body;
 
-    var users = usersMock.data.filter(user => user.email == email && user.password == password);
+    console.log(req.body);
+
+    console.log(JSON.stringify(usersMock.data));
+
+    var users = usersMock.data.find(user => user.email == email && user.password == password);
     
+    console.log(users);
+
     if (!users || users == null || users.length == 0) {
       res.json({
         success: false,
@@ -42,9 +49,9 @@ module.exports = app => {
 
     var user = usersMock.data.find(x => x.email == email);
     
-    if(user){
-      user.password = "***********";
-    }
+    // if(user){
+    //   user.password = "***********";
+    // }
         
     res.status(200).json(user);
   }
@@ -62,13 +69,8 @@ module.exports = app => {
   }
 
   controller.register = (req, res) => {
-    console.log(req.body);
-    
     var userId = uuidv4();
     var addressId = uuidv4();
-
-    console.log(userId);
-    console.log(addressId);
 
     let user = {
       id: userId,
@@ -93,13 +95,14 @@ module.exports = app => {
 
     user.address = address;
 
-    console.log(user);
-
     usersMock.data.push(user);
-
-    let xxuser = usersMock.data.find(user => user.id == userId);
     
-    user.password = "*************";
+    fs.writeFile('./api/data/users.json', JSON.stringify(app.data.users), (err) => {
+      if (err) throw err;      
+    });
+
+    let xxuser = usersMock.data.find(user => user.id == userId);    
+    // user.password = "*************";
 
     res.status(201).json(user);
   };
@@ -136,6 +139,11 @@ module.exports = app => {
         user.addres.state = req.body.address.state;      
 
         usersMock.data.splice(foundUserIndex, 1, user);
+
+        fs.writeFile('./api/data/users.json', JSON.stringify(app.data.users), (err) => {
+          if (err) throw err;
+          
+        });
 
         res.status(200).json({
           message: 'Usuário atualizado com sucesso!',

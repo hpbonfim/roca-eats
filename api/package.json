@@ -24,6 +24,7 @@
     "express-jwt-authz": "^2.3.1",
     "helmet": "^3.22.0",
     "jwks-rsa": "^1.8.0",
+    "lowdb": "^1.0.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "swagger-ui-express": "^4.1.4",

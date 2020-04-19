@@ -17,12 +17,17 @@ export class XHttpInterceptor implements HttpInterceptor {
 
     const headersConfig = {
       'Access-Control-Allow-Origin': '*',
-      'Accept': 'application/json'
-      // , 'Transfer-Encoding': 'chunked'
+      'Accept': 'application/json',
+      //'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
+      //'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
     };
 
-    request = request.clone({ setHeaders: headersConfig });
+    console.log(request.url);
 
+    if(!request.url.startsWith("http://viacep.com.br/")){
+      request = request.clone({ setHeaders: headersConfig });
+    }
+    
     return next.handle(request).pipe(tap((event: HttpEvent<any>) => {
         
       }),
