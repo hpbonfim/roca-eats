@@ -23,7 +23,7 @@ export class HomePage {
   textoPrimeiroCard: string = "Unindo produtores rurais e instituições sem fins lucrativos por meio de uma plataforma digital, desenvolvida com o fim de, adequar a necessidade do recebimento de doações por entidades beneficentes, à dificuldade enfrentada  na escoação da produção rural, vista a baixa demanda consumerista por parte de estabelecimentos comerciais alimentícios, zelando pela  expansão social, e valorização da saúde pública frente ao combate a pandemia.";
 
   tituloSegundoCard: string = "";
-  textoSegundoCard: string = "Auxiliar os pequenos produtores da região da Metropolitana, no escoamento da produção rural, tendo em vista que as colheitas realizadas por estes, não estão sendo comercializadas em sua totalidade, acarretando diminuição nos lucros e consequentemente levando a demissões no setor. Ou ainda em função de outras causalidades, como greve de caminhoneiros que impede o escoamento da produção, ou mudanças climáticas.";
+  textoSegundoCard: string = "Auxiliar os pequenos produtores da região da Metropolitana, no escoamento da produção rural, tendo em vista que as colheitas realizadas por estes, não estão sendo comercializadas em sua totalidade, acarretando diminuição nos lucros e consequentemente levando a demissões no setor.";
 
   tituloTerceiroCard: string = "";
   textoTerceiroCard: string = "Evitar os desperdícios dos alimentos produzidos pelo agronegócio, tão bem com restringir empregos de técnicas agrícolas em vão, reduzido a degradação do solo e seus componentes, e mantendo postos de trabalhos das pequenas regiões, evitando maiores demandas para o grandes centro como o de São Paulo.";

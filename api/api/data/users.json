@@ -1,0 +1,134 @@
+{
+    "users": {
+        "data": [
+            {
+                "id": "67bed6cb-8659-4218-89a5-8ec57a8c81d1",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "1a4389db-dab4-4eb9-8e0c-587578fb7f0a",
+                    "userId": "67bed6cb-8659-4218-89a5-8ec57a8c81d1",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
+                },
+                "type": "1",
+                "active": true
+            },
+            {
+                "id": "a8b7cf98-9025-4459-9ebe-be1b410ab893",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz1.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "eefcc00c-74b7-42cf-b6a7-2640082e76b7",
+                    "userId": "a8b7cf98-9025-4459-9ebe-be1b410ab893",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP"
+                },
+                "type": "2",
+                "active": true
+            },
+            {
+                "id": "ed859f9b-ed3b-484b-8945-6f49b26117ec",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz2.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "58e8f7ac-8271-4786-abd0-c443692988cd",
+                    "userId": "ed859f9b-ed3b-484b-8945-6f49b26117ec",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP"
+                },
+                "type": "2",
+                "active": true
+            },
+            {
+                "id": "541feb23-bea1-4618-a900-e22e23947f69",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz3.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "9f78c607-2e4d-4bbc-9ddd-e380805b8178",
+                    "userId": "541feb23-bea1-4618-a900-e22e23947f69",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP"
+                },
+                "type": "2",
+                "active": true
+            },
+            {
+                "id": "541feb23-bea1-4618-a900-e22e23947f69",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz4.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "11def850-a990-40ce-9215-67c54e136867",
+                    "userId": "541feb23-bea1-4618-a900-e22e23947f69",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP"
+                },
+                "type": "2",
+                "active": true
+            },
+            {
+                "id": "0e500868-accc-4a82-ae79-474feefe3f81",
+                "fullName": "Luiz Henrique Nery",
+                "fantasyName": "Sitio do Nery",
+                "email": "luiz5.nery@gmail.com",
+                "password": "abc1234",
+                "phoneNumber": "123456789",
+                "address": {
+                    "id": "7e866463-2100-4321-8c0b-093dfd5bc015",
+                    "userId": "0e500868-accc-4a82-ae79-474feefe3f81",
+                    "postalCode": "09781220",
+                    "address": "Rua Tiradentes",
+                    "number": "1837",
+                    "complement": "Bloco 11 Apto 84",
+                    "neighborhood": "Ferrazópolis",
+                    "city": "São Bernardo do Campo",
+                    "state": "SP"
+                },
+                "type": "2",
+                "active": true
+            }
+        ]
+    }
+}
