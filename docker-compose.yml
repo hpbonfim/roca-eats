@@ -7,24 +7,30 @@ services:
     container_name: portainer
     ports:
     - "9000:9000"
-    networks:
-    - intranet
-    volumes:
+     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - portainerdata:/data
 
 # FRONT-END
   roca_eats:
-    build: "./src/"
+    build: "./app/"
     container_name: roca
     #image: hpbonfim/roca-eats:latest
     restart: always
     ports:
         - "8100:8100"
-    networks:
-        - intranet
     entrypoint:
     - '/usr/local/bin/docker-entrypoint.sh'
+
+    api:
+      build: "./api/"
+      container_name: api
+      restart: always
+      privileged: true
+      ports:
+        - "3000:3000"
+      entrypoint:
+        - '/usr/local/bin/docker-entrypoint.sh'
 
 networks:
   intranet:
