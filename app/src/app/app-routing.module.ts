@@ -15,7 +15,11 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
-  { path: '*', redirectTo: '', pathMatch: 'full' }
+  { path: '*', redirectTo: '', pathMatch: 'full' },  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  }
+
 ];
 
 @NgModule({
