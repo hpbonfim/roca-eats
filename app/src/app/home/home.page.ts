@@ -18,7 +18,7 @@ export class HomePage {
     this.router.navigate(['/register'])
     return window.location.href = 'http://localhost:8100/register';
   }
-  // textos inicio
+ // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
 
   //
@@ -40,7 +40,7 @@ export class HomePage {
 
   // textos detalhes
   tituloDetalhesMissao: string = "MISSÃO";
-  subtituloDetalhesMissao: string = "Busca por parcerias no agronegócio a fim de estimular políticas sociais ao Combate a fome e a miséria de pessoas em situações de vulnerabilidade,  com ênfase na doação de alimentos derivados do campo, auxiliando no escoamento excedente da produção agrícola  frente às dificuldades enfrentadas perante a pandemia.";
+  subtituloDetalhesMissao: string = "Buscar por parcerias no agronegócio a fim de estimular políticas sociais ao combate a fome e a miséria de pessoas em situações de vulnerabilidade,  com ênfase na doação de alimentos derivados do campo, auxiliando no escoamento excedente da produção agrícola  frente às dificuldades enfrentadas perante a pandemia.";
   textoDescricaoDetalhesMissao: string = "- Estamos fazendo o nosso melhor para ajudar!";
 
   tituloDetalhesVisao: string = "VISÃO";
@@ -48,18 +48,18 @@ export class HomePage {
   textoDescricaoDetalhesVisao: string = "- Juntos somos mais fortes!";
 
   tituloDetalhesValores: string = "VALORES";
-  subtituloDetalhesValores: string = "Aproximando o agricultor dos indivíduos em situação de vulnerabilidade social, auxiliando na construção da dignidade alimentícia destas pessoas, valorizando a mão de obra agrícola por meio da inovação tecnológica, e assumindo um compromisso social, expandido com responsabilidade a valorização humanitária, assumindo os preceitos éticos, que regem a solidariedade, levando mais igualdade a quem necessita, fortificando o ciclo fraterno humanitário.";
-  textoDescricaoDetalhesValores: string = "VIDAS";
-  primeiroTopicoDetalhesValores: string = "Valorização do Ser Humano";
-  segundoTopicoDetalhesValores: string = "Igualdade Social";
-  terceiroTopicoDetalhesValores: string = "Democratização da Inovação";
-  quartoTopicoDetalhesValores: string = "Alimentos para todos";
-  quintoTopicoDetalhesValores: string = "Sustentabilidade Ambiental";
+  subtituloDetalhesValores: string = "";
+  textoDescricaoDetalhesValores: string = "";
+  primeiroTopicoDetalhesValores: string = "Dignidade Alimentícia";
+  segundoTopicoDetalhesValores: string = "Inovação tecnológica e Compromisso Social";
+  terceiroTopicoDetalhesValores: string = "Valorização Humanitária";
+  quartoTopicoDetalhesValores: string = "Ética e igualdade";
+  quintoTopicoDetalhesValores: string = "";
 
 
   // textos midia
   tituloMidia: string = "MÍDIA";
-  subtituloMidia: string = "Estamos fazendo a diferença!";
+  subtituloMidia: string = "";
   textoDescricaoMidia: string = "Veja o que estão falando do projeto";
 
   tituloAbaPrimeiraMidia: string = "GLOBO PLAY";
@@ -82,10 +82,11 @@ export class HomePage {
  
 
   // textos doacao
+  textoVaquinha: string = "Ajude-nos a ajudar ainda mais, precisamos doar para levar mais igualdade a quem necessita de ajuda neste momento."
   tituloRedesSociais: string = "REDES SOCIAIS";
 
   // textos footer
   tituloFooter: string = "SOBRE O ROÇA EATS";
-  textoFooter: string = "Procurando sempre satisfazer a necessidade de uma alimentação saudável, direto do campo para sua casa.";
+  textoFooter: string = "A RoçaEats é uma rede que une instituições sem fins lucrativos e produtores rurais, desenvolvida com o fim de, adequar a necessidade do recebimento de doações por entidades beneficentes, à dificuldade enfrentada na escoação da produção rural, zelando pela expansão social, valorização da saúde pública frente ao combate a pandemia e a preservação do meio ambiente.";
 
 }

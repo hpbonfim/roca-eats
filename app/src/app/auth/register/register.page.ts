@@ -15,6 +15,18 @@ import { IBGEProvider } from 'src/app/providers/ibge.provider';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
+
+
+  termosDeUso() {
+    if (confirm(this.termoDefinicao)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  termoDefinicao: string = "TERMOS E CONDIÇÕES DE USO ROÇAEAST \n Art. 1º O doador (produtor rural, distribuidor, atacadistas e varejistas), declara estar ciente da responsabilidade e assume o compromisso de cumprir com as normas de rastreabilidade da INC 02/2018. \n Art. 2º Os doadores citados no artigo anterior, ao aceitarem os termos e condições de uso, declaram sob as penas da lei, manter registros dos insumos agrícolas aplicados na produção ou pós-colheita por 18 meses e realizar a rastreabilidade, com registros, controle e identificação (conforme INC 02/2018). \n Art. 3º ao aceitarem os termos de uso, os doadores assumem a responsabilidade de entregar a doação aos beneficiários, seguindo os termos de qualidade e higienização. \n Art. 4º os doadores assumem o compromisso de não onerar por qualquer forma ou valor, o beneficiário da doação. \n Art. 5º os doadores, assumem o compromisso de entregar os produtos previamente definidos, a instituição beneficiária, nos dias e horários pré-definidos. §1º as condições de entregas definidas no caput do artigo anterior, poderão ser revistas e realocadas, modificadas ou alteradas, em casos oriundos a estado de necessidade ou força maior. §2º ocorrendo qualquer hipótese do paragrafo anterior, o doador assume não realizar entrega de qualquer produto fora dos padrões de qualidade e consumo, reavaliando uma nova remessa de produtos. \n Art. 6º os beneficiários assumem o compromisso, de receber os produtos oriundos das doações, nos dias é horários programados, passando a confirmar e avaliar a qualidade dos produtos entregues. \n Art. 7º os beneficiários dos produtos doados firmam o compromisso de fazer a destinação dos produtos, aos necessitados em situação de precariedade ou qualquer dificuldade social, sem custo ou ônus. \n Art. 8º os cadastrados na plataforma RoçaEast, autorizam a utilização dos dados cadastrais inseridos no sistema no momento da confirmação e aceitação destes termos e condições de uso. §1º os membros e usuários da plataforma RoçaEast, autorizam o uso de imagens audiovisuais, fotografias, textos, logo e marcas, nome fantasia e razões sociais, em campanhas com fim social, exposição na plataforma digital, pôster, reportagens associadas a plataforma em ambientes midiáticos, jornalísticos ou qualquer plataforma de redes sociais ligadas a RoçaEast. \n Art. 9º a RoçaEats fica isenta de qualquer responsabilidade sobre as doações entregues, seu tipo, quantidade e qualidade, ou quaisquer danos que por motivo de estado de necessidade ou força maior vierem a acontecer com o transporte desta. Ciente dos termos e condições acima, aceito o uso da plataforma RoçaEats, a fim de cumprir com as condições pré-estabelecidas e qualquer outras que vierem a ser introduzidas ou alteradas durante o período de cadastramento na plataforma. Declaro ainda, serem verdadeiras as informações e estou ciente da aplicação das penalidades prescritas no Art. 299 do Código Penal Brasileiro, caso não haja veracidade."
+ 
   // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
 
