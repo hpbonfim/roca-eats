@@ -15,31 +15,33 @@ export class HomePage {
   tituloProjeto: string = "PROJETO";
   subtituloProjeto: string = "Queremos diminuir o impacto que o novo coronavirus COVID-19 está fazendo em nossas vidas.";
 
-  tituloPrimeiroCard: string = "Conteúdo 1";
-  textoPrimeiroCard: string = "Desenvolver texto para a imagem escolhida ou tema";
+  tituloPrimeiroCard: string = "";
+  textoPrimeiroCard: string = "Unindo produtores rurais e instituições sem fins lucrativos por meio de uma plataforma digital, desenvolvida com o fim de, adequar a necessidade do recebimento de doações por entidades beneficentes, à dificuldade enfrentada  na escoação da produção rural, vista a baixa demanda consumerista por parte de estabelecimentos comerciais alimentícios, zelando pela  expansão social, e valorização da saúde pública frente ao combate a pandemia.";
 
-  tituloSegundoCard: string = "Conteúdo 2";
-  textoSegundoCard: string = "Desenvolver texto para a imagem escolhida ou tema";
+  tituloSegundoCard: string = "";
+  textoSegundoCard: string = "Auxiliar os pequenos produtores da região da Metropolitana, no escoamento da produção rural, tendo em vista que as colheitas realizadas por estes, não estão sendo comercializadas em sua totalidade, acarretando diminuição nos lucros e consequentemente levando a demissões no setor. Ou ainda em função de outras causalidades, como greve de caminhoneiros que impede o escoamento da produção, ou mudanças climáticas.";
 
-  tituloTerceiroCard: string = "Conteúdo 3";
-  textoTerceiroCard: string = "Desenvolver texto para a imagem escolhida ou tema";
+  tituloTerceiroCard: string = "";
+  textoTerceiroCard: string = "Evitar os desperdícios dos alimentos produzidos pelo agronegócio, tão bem com restringir empregos de técnicas agrícolas em vão, reduzido a degradação do solo e seus componentes, e mantendo postos de trabalhos das pequenas regiões, evitando maiores demandas para o grandes centro como o de São Paulo.";
 
   // textos detalhes
   tituloDetalhesMissao: string = "MISSÃO";
-  subtituloDetalhesMissao: string = "Combater a fome e a miséria de populações em situação de vulnerabilidade social com ênfase na doação de alimentos derivados no campo.";
+  subtituloDetalhesMissao: string = "Busca por parcerias no agronegócio a fim de estimular políticas sociais ao Combate a fome e a miséria de pessoas em situações de vulnerabilidade,  com ênfase na doação de alimentos derivados do campo, auxiliando no escoamento excedente da produção agrícola  frente às dificuldades enfrentadas perante a pandemia.";
   textoDescricaoDetalhesMissao: string = "- Estamos fazendo o nosso melhor para ajudar!";
 
   tituloDetalhesVisao: string = "VISÃO";
-  subtituloDetalhesVisao: string = "Alcançar pessoas em situação de vulnerabilidade alimentar, encurtando nossas distâncias, entre necessidade e possibilidade em busca de um futuro melhor após a pandemia";
+  subtituloDetalhesVisao: string = "Alcançar pessoas em situação de vulnerabilidade alimentar e social durante e após qualquer crise pública, seja em escala estadual, municipal ou nacional, agregando pequenos, médios e grandes agricultores a corrente solidária, realizando um encurtamento social entre o alimento doado e a mesa dos necessitados.";
   textoDescricaoDetalhesVisao: string = "- Juntos somos mais fortes!";
 
   tituloDetalhesValores: string = "VALORES";
-  subtituloDetalhesValores: string = "Aproximando as pessoas, valorizando a mão de obra agrícola, expandido com responsabilidade o alcance a uma alimentação saudável para a sociedade em situação de vulnerabilidade em pról da contribuição comunitária.";
-  textoDescricaoDetalhesValores: string = "";
-  primeiroTopicoDetalhesValores: string = "Dignidade alimentícia";
-  segundoTopicoDetalhesValores: string = "Alimentação Saudável";
-  terceiroTopicoDetalhesValores: string = "Valorização Humanitária";
-  quartoTopicoDetalhesValores: string = "Ética e Humildade";
+  subtituloDetalhesValores: string = "Aproximando o agricultor dos indivíduos em situação de vulnerabilidade social, auxiliando na construção da dignidade alimentícia destas pessoas, valorizando a mão de obra agrícola por meio da inovação tecnológica, e assumindo um compromisso social, expandido com responsabilidade a valorização humanitária, assumindo os preceitos éticos, que regem a solidariedade, levando mais igualdade a quem necessita, fortificando o ciclo fraterno humanitário.";
+  textoDescricaoDetalhesValores: string = "VIDAS";
+  primeiroTopicoDetalhesValores: string = "Valorização do Ser Humano";
+  segundoTopicoDetalhesValores: string = "Igualdade Social";
+  terceiroTopicoDetalhesValores: string = "Democratização da Inovação";
+  quartoTopicoDetalhesValores: string = "Alimentos para todos";
+  quintoTopicoDetalhesValores: string = "Sustentabilidade Ambiental";
+
 
   // textos midia
   tituloMidia: string = "MÍDIA";
