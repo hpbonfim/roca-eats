@@ -2844,7 +2844,7 @@ readers do not read off random characters that represent icons */
 .fa-penny-arcade:before {
   content: "\f704"; }
 
-.fa-people-carry:before {
+.fa-users-carry:before {
   content: "\f4ce"; }
 
 .fa-pepper-hot:before {
