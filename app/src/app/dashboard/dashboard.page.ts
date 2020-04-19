@@ -1,3 +1,6 @@
+import { UserService } from 'src/app/services/auth/user.services';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { User } from './../models/user.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,9 +16,28 @@ export class DashboardPage implements OnInit {
   tituloFooter: string = "SOBRE O ROÇA EATS";
   textoFooter: string = "Procurando sempre satisfazer a necessidade de uma alimentação saudável, direto do campo para sua casa.";
 
-  constructor() { }
+  user = new User();
+
+  constructor(private authService: AuthService, private userService : UserService,) { }
 
   ngOnInit() {
+    this.checkUser();
+  }
+
+  checkUser(){
+    var user = localStorage.getItem("user");
+      
+    if(!user){
+      return window.location.replace('http://localhost:8100/login');
+    }
+
+    console.log(user);
+
+    this.userService.getUser(user).subscribe(data =>{
+      console.log(data);
+      this.user = data;
+    });
+
   }
 
   redirectMapa(){
@@ -24,6 +46,14 @@ export class DashboardPage implements OnInit {
 
   redirecExit(){
     return window.location.replace('http://localhost:8100/');
+  }
+
+  redirectQueroDoar(){
+    return window.location.replace('http://localhost:8100/querodoar');
+  }
+
+  redirectPrecisoDoacao(){
+    return window.location.replace('http://localhost:8100/precisodoacao');
   }
 
 }

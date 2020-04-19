@@ -18,7 +18,9 @@ export class AuthService {
     constructor(@SkipSelf() private http: HttpClient) { }
 
     isAuthenticated(): boolean {
-      return true;
+      var user = localStorage.getItem("user");
+      
+      return !user;
     }
 
     login(email: string, password: string){

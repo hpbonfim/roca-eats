@@ -18,6 +18,14 @@ const routes: Routes = [
   { path: '*', redirectTo: '', pathMatch: 'full' },  {
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+  {
+    path: 'querodoar',
+    loadChildren: () => import('./querodoar/querodoar.module').then( m => m.QuerodoarPageModule)
+  },
+  {
+    path: 'precisodoacao',
+    loadChildren: () => import('./precisodoacao/precisodoacao.module').then( m => m.PrecisodoacaoPageModule)
   }
 
 ];

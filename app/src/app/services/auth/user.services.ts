@@ -23,6 +23,6 @@ export class UserService {
 
     getUser(email: String){
         const apiUrl = API_URL + '/user/' + email;
-        return this.http.get(apiUrl, httpOptions);
+        return this.http.get<User>(apiUrl, httpOptions);
     }
 }

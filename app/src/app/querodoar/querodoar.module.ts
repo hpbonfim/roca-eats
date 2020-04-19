@@ -1,23 +1,23 @@
-import { UserService } from 'src/app/services/auth/user.services';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DashboardPageRoutingModule } from './dashboard-routing.module';
+import { QuerodoarPageRoutingModule } from './querodoar-routing.module';
 
-import { DashboardPage } from './dashboard.page';
+import { QuerodoarPage } from './querodoar.page';
 import { AuthService } from '../services/auth/auth.service';
+import { UserService } from '../services/auth/user.services';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule
+    QuerodoarPageRoutingModule
   ],
   providers: [AuthService, UserService],
-  declarations: [DashboardPage]
+  declarations: [QuerodoarPage]
 })
-export class DashboardPageModule {}
+export class QuerodoarPageModule {}

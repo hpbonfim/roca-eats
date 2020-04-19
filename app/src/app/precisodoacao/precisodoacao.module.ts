@@ -1,23 +1,23 @@
-import { UserService } from 'src/app/services/auth/user.services';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DashboardPageRoutingModule } from './dashboard-routing.module';
+import { PrecisodoacaoPageRoutingModule } from './precisodoacao-routing.module';
 
-import { DashboardPage } from './dashboard.page';
+import { PrecisodoacaoPage } from './precisodoacao.page';
 import { AuthService } from '../services/auth/auth.service';
+import { UserService } from '../services/auth/user.services';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule
+    PrecisodoacaoPageRoutingModule
   ],
   providers: [AuthService, UserService],
-  declarations: [DashboardPage]
+  declarations: [PrecisodoacaoPage]
 })
-export class DashboardPageModule {}
+export class PrecisodoacaoPageModule {}
