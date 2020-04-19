@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-item>
+    <ion-label>Selecionar</ion-label>
+    <ionic-selectable [(ngModel)]="selecionar_instituicao" [items]="instituicoes" itemValueField="id" itemTextField="nome" [canSearch]="true" (onChange)="drawMap($event)"></ionic-selectable>
+  </ion-item>
+</ion-header>
+<ion-content>
+<div id="map" class="map"></div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <ion-tabs>
+            <!-- Tab bar -->
+            <ion-tab-bar slot="bottom">
+              <ion-tab-button (click)="showConfirm()">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </ion-tab-button>
+              <ion-tab-button (click)="openModal()">
+                <ion-icon name="map-outline"></ion-icon>
+              </ion-tab-button>
+              <ion-tab-button>
+                <ion-icon name="exit-outline"></ion-icon>
+              </ion-tab-button>
+            </ion-tab-bar>
+          </ion-tabs>
+    </ion-toolbar>
+</ion-footer>

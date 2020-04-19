@@ -15,12 +15,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { OpenStreetMapProvider } from './providers/openstreetmap.provider';
 import { IBGEProvider } from './providers/ibge.provider';
 import { XHttpInterceptor } from './providers/xhttpIntercept';
+import { IonicSelectableModule } from 'ionic-selectable';
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
+    IonicSelectableModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
