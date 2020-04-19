@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
+import { IonicSelectableModule } from 'ionic-selectable';
 
 import { MapaPageRoutingModule } from './mapa-routing.module';
 
@@ -13,6 +14,7 @@ import { MapaPage } from './mapa.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    IonicSelectableModule,
     MapaPageRoutingModule
   ],
   declarations: [MapaPage]

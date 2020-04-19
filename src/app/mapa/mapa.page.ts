@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Leaflet from 'leaflet';
 import 'leaflet-routing-machine';
+import { IonicSelectableComponent } from 'ionic-selectable';
+
+class Selecao {
+  public id: number;
+  public nome: string;
+  public lat: number;
+  public lng: number;
+}
 
 // Add this line to remove typescript errors
 declare var L: any;
@@ -11,33 +19,65 @@ declare var L: any;
   styleUrls: ['./mapa.page.scss'],
 })
 export class MapaPage implements OnInit {
+  instituicoes: Selecao[];
+  selecionar_instituicao: Selecao;
 
-  constructor() { }
+  produtor = [
+    {
+      id: 0,
+      lat: -23.6993036,
+      lng: -46.2514117
+    }
+  ]
+
+  PointA_lat = this.produtor[0].lat
+  PointA_lng = this.produtor[0].lng
+
+  PointB_lat: number 
+  PointB_lng: number
+
+  constructor() { 
+    this.instituicoes = [
+      {
+        id: 1,
+        nome: "Parque Ibirapuera",
+        lat: -23.5874162,
+        lng: -46.6598223
+      },
+      {
+        id: 2,
+        nome: "Praça da Sé",
+        lat: -23.5503099,
+        lng: -46.6363896
+      }
+    ]
+  }
 
   ngOnInit() {
   }
 
+  selectChange(event: {
+    component: IonicSelectableComponent,
+    value: any
+  }) {
+    console.log('selecao:', event.value);
+    this.PointB_lat = event.value.lat
+    this.PointB_lng = event.value.lng
+    console.log('valor ;ega', event.value.lng)
+  }
+
   mapa: any;
-
-  lat = -23.6719
-  lng = -46.7771
-
-  PointA_lat = -23.657
-  PointA_lng = -46.767
-
-  PointB_lat = -23.6229
-  PointB_lng = -46.7142
-
+  
   ionViewDidEnter() {
     this.drawMap();
   }
 
   drawMap(): void {
     // marcador do mapa
-    const markerGroup = Leaflet.featureGroup();
-    const marker = Leaflet.marker([this.lat, this.lng]);
+    //const markerGroup = Leaflet.featureGroup();
+    //const marker = Leaflet.marker([this.lat, this.lng]);
 
-    this.mapa = Leaflet.map('map').setView([this.lat, this.lng], 11);
+    this.mapa = Leaflet.map('map').setView([this.produtor[0].lat, this.produtor[0].lng], 11);
 
     Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© Open Street Map',
@@ -47,7 +87,7 @@ export class MapaPage implements OnInit {
     minResolution: 4891.96981025128,
     maxResolution: 39135.75848201024,
     doubleClickZoom: true,
-    center: [this.lat, this.lng]
+    center: [this.produtor[0].lat, this.produtor[0].lng]
     }).addTo(this.mapa);
 
     Leaflet.Routing.control({
