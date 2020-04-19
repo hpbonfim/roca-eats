@@ -98,8 +98,8 @@ module.exports = app => {
     usersMock.data.push(user);
 
     let xxuser = usersMock.data.find(user => user.id == userId);
-    console.log("Usuário Encontrado");
-    console.log(xxuser);
+    
+    user.password = "*************";
 
     res.status(201).json(user);
   };

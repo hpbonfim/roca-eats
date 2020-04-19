@@ -40,7 +40,10 @@
                     "complement": "Bloco 11 Apto 84",
                     "neighborhood": "Ferrazópolis",
                     "city": "São Bernardo do Campo",
-                    "state": "SP"
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
+
                 },
                 "type": "2",
                 "active": true
@@ -61,7 +64,9 @@
                     "complement": "Bloco 11 Apto 84",
                     "neighborhood": "Ferrazópolis",
                     "city": "São Bernardo do Campo",
-                    "state": "SP"
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
                 },
                 "type": "2",
                 "active": true
@@ -82,7 +87,9 @@
                     "complement": "Bloco 11 Apto 84",
                     "neighborhood": "Ferrazópolis",
                     "city": "São Bernardo do Campo",
-                    "state": "SP"
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
                 },
                 "type": "2",
                 "active": true
@@ -103,7 +110,9 @@
                     "complement": "Bloco 11 Apto 84",
                     "neighborhood": "Ferrazópolis",
                     "city": "São Bernardo do Campo",
-                    "state": "SP"
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
                 },
                 "type": "2",
                 "active": true
@@ -124,7 +133,9 @@
                     "complement": "Bloco 11 Apto 84",
                     "neighborhood": "Ferrazópolis",
                     "city": "São Bernardo do Campo",
-                    "state": "SP"
+                    "state": "SP",
+                    "lat": "",
+                    "lon": ""
                 },
                 "type": "2",
                 "active": true
