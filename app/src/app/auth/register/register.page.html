@@ -26,27 +26,15 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#inicio">INÍCIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projeto">PROJETO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#detalhes">OBJETIVO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#midia">MÍDIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#social">REDES SOCIAIS</a>
+              <a class="nav-link" (click)="redirectInicio()">INÍCIO</a>
             </li>
           </ul>
           <span class="nav-item">
-            <a class="btn-outline-sm" routerLink="/login">ENTRAR</a>
-          </span>
-          <span class="nav-item">
-            <a class="btn-outline-sm" routerLink="/register">REGISTRAR</a>
-          </span>
+            <a class="btn-outline-sm" (click)="redirectLogin()">ENTRAR</a>
+        </span>
+        <span class="nav-item">
+            <a class="btn-outline-sm" (click)="redirectRegister()">REGISTRAR</a>
+        </span>
         </div>
       </div> <!-- fim do container -->
     </nav> <!-- fim do navbar -->
