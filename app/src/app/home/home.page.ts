@@ -11,6 +11,7 @@ export class HomePage {
   constructor(private router: Router) {}
 
   redirectLogin(){
+    
     return window.location.replace('http://localhost:8100/login');
   }
   redirectRegister(){
