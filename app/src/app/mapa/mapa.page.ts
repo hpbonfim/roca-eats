@@ -33,9 +33,11 @@ export class MapaPage implements OnInit {
   PointA_lat = this.produtor[0].lat
   PointA_lng = this.produtor[0].lng
 
-  PointB_lat: number 
-  PointB_lng: number
+  PointB_lat: number;
+  PointB_lng: number;
 
+  mapa: any;
+  
   constructor() { 
     this.instituicoes = [
       {
@@ -54,6 +56,8 @@ export class MapaPage implements OnInit {
   }
 
   ngOnInit() {
+    this.PointB_lat = this.instituicoes[0].lat;
+    this.PointB_lng = this.instituicoes[0].lng;
   }
 
   selectChange(event: {
@@ -61,12 +65,18 @@ export class MapaPage implements OnInit {
     value: any
   }) {
     console.log('selecao:', event.value);
-    this.PointB_lat = event.value.lat
-    this.PointB_lng = event.value.lng
-    console.log('valor ;ega', event.value.lng)
+    console.log('latitude', event.value.lat);
+    console.log('longitude', event.value.lng);
+  }
+ 
+
+  redirectDashboard(){
+    return window.location.replace('http://localhost:8100/dashboard');
   }
 
-  mapa: any;
+  redirecExit(){
+    return window.location.replace('http://localhost:8100/');
+  }
 
   ionViewDidEnter() {
     this.drawMap();

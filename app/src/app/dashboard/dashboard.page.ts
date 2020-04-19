@@ -18,4 +18,12 @@ export class DashboardPage implements OnInit {
   ngOnInit() {
   }
 
+  redirectMapa(){
+    return window.location.replace('http://localhost:8100/mapa');
+  }
+
+  redirecExit(){
+    return window.location.replace('http://localhost:8100/');
+  }
+
 }

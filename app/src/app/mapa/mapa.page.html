@@ -13,13 +13,13 @@
         <ion-tabs>
             <!-- Tab bar -->
             <ion-tab-bar slot="bottom">
-              <ion-tab-button (click)="showConfirm()">
+              <ion-tab-button (click)="redirectDashboard()">
                 <ion-icon name="analytics-outline"></ion-icon>
               </ion-tab-button>
-              <ion-tab-button (click)="openModal()">
+              <ion-tab-button>
                 <ion-icon name="map-outline"></ion-icon>
               </ion-tab-button>
-              <ion-tab-button>
+              <ion-tab-button (click)="redirectExit()">
                 <ion-icon name="exit-outline"></ion-icon>
               </ion-tab-button>
             </ion-tab-bar>
