@@ -10,6 +10,10 @@ export class HomePage {
   constructor() {}
   // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
+
+  //
+  tituloSobreNos: string = "COLHENDO O MELHOR DE NÓS!";
+  sobreNos: string = "A RoçaEats é uma rede que une instituições sem fins lucrativos e produtores rurais, desenvolvida com o fim de, adequar a necessidade do recebimento de doações por entidades beneficentes, à dificuldade enfrentada na escoação da produção rural, zelando pela expansão social, valorização da saúde pública frente ao combate a pandemia e a preservação do meio ambiente."
   
   // textos projeto
   tituloProjeto: string = "PROJETO";
