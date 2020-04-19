@@ -42,6 +42,16 @@ export class RegisterPage implements OnInit {
       this.states = data;
     });
   }
+  redirectInicio(){
+    return window.location.href = 'http://localhost:8100/';
+  }
+  redirectLogin(){
+    return window.location.replace('http://localhost:8100/login');
+  }
+  redirectRegister(){
+    this.router.navigate(['/register'])
+    return window.location.href = 'http://localhost:8100/register';
+  }
 
   getAddress() {
     if (this.address.postalCode != null) {
