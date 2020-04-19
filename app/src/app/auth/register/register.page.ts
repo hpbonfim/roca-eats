@@ -74,11 +74,11 @@ export class RegisterPage implements OnInit {
 
     this.user.address = this.address;
 
-    this.userService.register(this.user);
+    this.userService.register(this.user).subscribe(data => {
+      console.log(JSON.stringify(this.user));
 
-    console.log(JSON.stringify(this.user));
-
-    this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard']);
+    });    
   }
 
   matchPassword(): any {

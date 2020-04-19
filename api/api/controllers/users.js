@@ -1,4 +1,4 @@
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = app => {
 
@@ -15,16 +15,12 @@ module.exports = app => {
       password
     } = req.body;
 
-    console.log(req);
-
     var users = usersMock.data.filter(user => user.email == email && user.password == password);
     
-    console.log(users);
-
     if (!users || users == null || users.length == 0) {
       res.json({
         success: false,
-        message: 'A autenticação falhou, o usuário verifique os dados informados!'
+        message: 'A autenticação falhou, verifique os dados informados!'
       });
 
       return;
@@ -66,8 +62,16 @@ module.exports = app => {
   }
 
   controller.register = (req, res) => {
+    console.log(req.body);
+    
+    var userId = uuidv4();
+    var addressId = uuidv4();
+
+    console.log(userId);
+    console.log(addressId);
+
     let user = {
-      id: uuidv4(),
+      id: userId,
       fullName: req.body.fullName,
       fantasyName: req.body.fantasyName,
       email: req.body.email,
@@ -76,8 +80,8 @@ module.exports = app => {
     };
 
     let address = {
-      id: uuidv4(),
-      userId: user.id,
+      id: addressId,
+      userId: userId,
       postalCode: req.body.address.postalCode,
       address: req.body.address.address,
       number: req.body.address.number,
@@ -89,8 +93,15 @@ module.exports = app => {
 
     user.address = address;
 
+    console.log(user);
+
     usersMock.data.push(user);
-    res.status(201).json(usersMock);
+
+    let xxuser = usersMock.data.find(user => user.id == userId);
+    console.log("Usuário Encontrado");
+    console.log(xxuser);
+
+    res.status(201).json(user);
   };
 
   controller.update = (req, res) => {

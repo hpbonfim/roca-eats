@@ -97,7 +97,7 @@
     <div class="center">
       <div class="row">
         <div class="col-lg-12">
-          <form #form="ngForm" (ngSubmit)="login()">
+          <form name="form" #form="ngForm" (ngSubmit)="login()">
               <ion-grid>
                 <ion-row color="primary" justify-content-center>
                   <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
@@ -106,7 +106,7 @@
                     </div>
                     <div padding>
                       <ion-item>
-                        <ion-input name="email" type="email" placeholder="seu@email.com" [(ngModel)]="loginData.email" required></ion-input>
+                        <ion-input id="email" name="email" type="email" placeholder="seu@email.com" [(ngModel)]="loginData.email" required></ion-input>
                       </ion-item>
                       <ion-item>
                         <ion-input name="password" type="password" placeholder="Senha" [(ngModel)]="loginData.password" required></ion-input>

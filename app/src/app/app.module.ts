@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { OpenStreetMapProvider } from './providers/openstreetmap.provider';
 import { IBGEProvider } from './providers/ibge.provider';
+import { XHttpInterceptor } from './providers/xhttpIntercept';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { IBGEProvider } from './providers/ibge.provider';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    { provide: HTTP_INTERCEPTORS, useClass: XHttpInterceptor, multi: true },
     ViaCepProvider,
     OpenStreetMapProvider,
     IBGEProvider

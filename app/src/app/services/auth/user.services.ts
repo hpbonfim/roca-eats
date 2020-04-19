@@ -17,12 +17,12 @@ export class UserService {
     constructor(@SkipSelf() private http: HttpClient) { }
     
     register(user: User){
-        const apiUrl = API_URL + '/authenticate';
+        const apiUrl = API_URL + '/users';
         return this.http.post(apiUrl, user, httpOptions);
     }
 
     getUser(email: String){
-        const apiUrl = API_URL + '/api/v1/user/' + email;
+        const apiUrl = API_URL + '/user/' + email;
         return this.http.get(apiUrl, httpOptions);
     }
 }

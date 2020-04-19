@@ -24,12 +24,19 @@ export class AuthService {
     login(email: string, password: string){
       const url = API_URL + '/authenticate';
 
-      const params = new HttpParams()
-      .set('email', email)
-      .set('password', password);
+      const body = {
+        email: email,
+        password: password
+      }
+      
+      console.log(body);
+      
+      // const params = new HttpParams()
+      // .set('email', email)
+      // .set('password', password);
 
-      console.log(params);
+      // console.log(params);
 
-      return this.http.get(url, {params});
+      return this.http.post(url, body);
     }
 }
