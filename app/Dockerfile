@@ -1,15 +1,30 @@
-#DOCKERFILE PARA TESTES
-FROM node:12.16.2
+# Create the container from the alpine linux image
+FROM alpine:3.7
 
-#WORKDIR
-WORKDIR /usr/src/app
+# Add nginx
+RUN apk add --update nginx
 
-# INSTALL IONIC AND ANGULAR
-RUN npm install -g @angular/cli @ionic/cli
+# Create the directories workflow
+RUN mkdir -p /tmp/frontend
+RUN mkdir -p /var/log/nginx
+RUN mkdir -p /var/www/html
 
-COPY . .
+# Copy the nginx configuration files
+COPY nginx_config/nginx.conf /etc/nginx/nginx.conf
+COPY nginx_config/default.conf /etc/nginx/conf.d/default.conf
+#COPY nginx_config/server.crt /etc/nginx/ssl/server.crt
+#COPY nginx_config/server.key /etc/nginx/ssl/server.key
 
-RUN cp tmp/docker-entrypoint.sh /usr/local/bin/ && \
-    chmod +x /usr/local/bin/docker-entrypoint.sh
+WORKDIR /tmp/frontend
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Copy our source code into the container
+COPY www ./www
+
+# copy the built app to our served directory
+RUN cp -r www/* /var/www/html && rm -rf ./* 
+
+# make all files belong to the nginx user
+RUN chown nginx:nginx /var/www/html
+
+# start nginx and keep the process from backgrounding and the container from quitting
+CMD ["nginx", "-g", "daemon off;"]

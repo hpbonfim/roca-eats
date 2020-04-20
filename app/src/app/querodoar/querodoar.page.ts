@@ -22,7 +22,7 @@ export class QuerodoarPage implements OnInit {
     var user = localStorage.getItem("user");
       
     if(!user){
-      return window.location.replace('http://localhost:8100/login');
+      return window.location.replace('http://34.231.173.124/login');
     }
 
     console.log(user);

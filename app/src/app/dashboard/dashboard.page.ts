@@ -28,7 +28,7 @@ export class DashboardPage implements OnInit {
     var user = localStorage.getItem("user");
       
     if(!user){
-      return window.location.replace('http://localhost:8100/login');
+      return window.location.replace('http://34.231.173.124/login');
     }
 
     console.log(user);
@@ -41,19 +41,19 @@ export class DashboardPage implements OnInit {
   }
 
   redirectMapa(){
-    return window.location.replace('http://localhost:8100/mapa');
+    return window.location.replace('http://34.231.173.124/mapa');
   }
 
   redirecExit(){
-    return window.location.replace('http://localhost:8100/');
+    return window.location.replace('http://34.231.173.124/');
   }
 
   redirectQueroDoar(){
-    return window.location.replace('http://localhost:8100/querodoar');
+    return window.location.replace('http://34.231.173.124/querodoar');
   }
 
   redirectPrecisoDoacao(){
-    return window.location.replace('http://localhost:8100/precisodoacao');
+    return window.location.replace('http://34.231.173.124/precisodoacao');
   }
 
 }

@@ -55,14 +55,14 @@ export class RegisterPage implements OnInit {
     });
   }
   redirectInicio(){
-    return window.location.href = 'http://localhost:8100/';
+    return window.location.href = 'http://34.231.173.124/';
   }
   redirectLogin(){
-    return window.location.replace('http://localhost:8100/login');
+    return window.location.replace('http://34.231.173.124/login');
   }
   redirectRegister(){
     this.router.navigate(['/register'])
-    return window.location.href = 'http://localhost:8100/register';
+    return window.location.href = 'http://34.231.173.124/register';
   }
 
   getAddress() {

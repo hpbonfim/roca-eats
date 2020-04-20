@@ -28,14 +28,14 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
   redirectInicio(){
-    return window.location.href = 'http://localhost:8100/';
+    return window.location.href = 'http://34.231.173.124/';
   }
   redirectLogin(){
-    return window.location.replace('http://localhost:8100/login');
+    return window.location.replace('http://34.231.173.124/login');
   }
   redirectRegister(){
     this.router.navigate(['/register'])
-    return window.location.href = 'http://localhost:8100/register';
+    return window.location.href = 'http://34.231.173.124/register';
   }
 
   login() {
@@ -49,7 +49,7 @@ export class LoginPage implements OnInit {
       else if (res["success"] == true) {
         localStorage.setItem("user", this.loginData.email);
 
-        this.router.navigate(['/dashboard']);
+        window.location.href = 'http://34.231.173.124/dashboard';
       } else {
         this.presentAlert('Login', "Seus dados de login estão incorretos, verifique!");
       }

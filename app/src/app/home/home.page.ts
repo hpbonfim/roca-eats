@@ -12,11 +12,11 @@ export class HomePage {
 
   redirectLogin(){
     
-    return window.location.replace('http://localhost:8100/login');
+    return window.location.replace('http://34.231.173.124/login');
   }
   redirectRegister(){
     this.router.navigate(['/register'])
-    return window.location.href = 'http://localhost:8100/register';
+    return window.location.href = 'http://34.231.173.124/register';
   }
  // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
@@ -53,7 +53,7 @@ export class HomePage {
   primeiroTopicoDetalhesValores: string = "Dignidade Alimentícia";
   segundoTopicoDetalhesValores: string = "Inovação tecnológica e Compromisso Social";
   terceiroTopicoDetalhesValores: string = "Valorização Humanitária";
-  quartoTopicoDetalhesValores: string = "Ética e igualdade";
+  quartoTopicoDetalhesValores: string = "Ética e Igualdade";
   quintoTopicoDetalhesValores: string = "";
 
 
