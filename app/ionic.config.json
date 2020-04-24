@@ -1,7 +1,0 @@
-{
-  "name": "roca-eats",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

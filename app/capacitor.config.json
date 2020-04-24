@@ -1,8 +1,0 @@
-{
-  "appId": "io.ionic.starter",
-  "appName": "roca-eats",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}
