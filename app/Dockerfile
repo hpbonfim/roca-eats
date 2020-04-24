@@ -12,6 +12,8 @@ RUN mkdir -p /var/www/html
 # Copy the nginx configuration files
 COPY nginx_config/nginx.conf /etc/nginx/nginx.conf
 COPY nginx_config/default.conf /etc/nginx/conf.d/default.conf
+
+# Already inside of AWS EC2
 #COPY nginx_config/server.crt /etc/nginx/ssl/server.crt
 #COPY nginx_config/server.key /etc/nginx/ssl/server.key
 
@@ -23,8 +25,8 @@ COPY www ./www
 # copy the built app to our served directory
 RUN cp -r www/* /var/www/html && rm -rf ./* 
 
-# make all files belong to the nginx user
+# make all files belongs to the nginx user
 RUN chown nginx:nginx /var/www/html
 
-# start nginx and keep the process from backgrounding and the container from quitting
+# start nginx
 CMD ["nginx", "-g", "daemon off;"]

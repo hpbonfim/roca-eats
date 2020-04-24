@@ -28,14 +28,14 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
   redirectInicio(){
-    return window.location.href = 'http://34.231.173.124/';
+    return window.location.href = 'http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/';
   }
   redirectLogin(){
-    return window.location.replace('http://34.231.173.124/login');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/login');
   }
   redirectRegister(){
     this.router.navigate(['/register'])
-    return window.location.href = 'http://34.231.173.124/register';
+    return window.location.href = 'http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/register';
   }
 
   login() {
@@ -49,7 +49,7 @@ export class LoginPage implements OnInit {
       else if (res["success"] == true) {
         localStorage.setItem("user", this.loginData.email);
 
-        window.location.href = 'http://34.231.173.124/dashboard';
+        window.location.href = 'http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/dashboard';
       } else {
         this.presentAlert('Login', "Seus dados de login estão incorretos, verifique!");
       }

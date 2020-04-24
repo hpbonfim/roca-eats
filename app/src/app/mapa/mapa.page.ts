@@ -71,11 +71,11 @@ export class MapaPage implements OnInit {
  
 
   redirectDashboard(){
-    return window.location.replace('http://34.231.173.124/dashboard');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/dashboard');
   }
 
   redirecExit(){
-    return window.location.replace('http://34.231.173.124/');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/');
   }
 
   ionViewDidEnter() {

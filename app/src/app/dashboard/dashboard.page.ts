@@ -28,7 +28,7 @@ export class DashboardPage implements OnInit {
     var user = localStorage.getItem("user");
       
     if(!user){
-      return window.location.replace('http://34.231.173.124/login');
+      return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/login');
     }
 
     console.log(user);
@@ -41,19 +41,19 @@ export class DashboardPage implements OnInit {
   }
 
   redirectMapa(){
-    return window.location.replace('http://34.231.173.124/mapa');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/mapa');
   }
 
   redirecExit(){
-    return window.location.replace('http://34.231.173.124/');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/');
   }
 
   redirectQueroDoar(){
-    return window.location.replace('http://34.231.173.124/querodoar');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/querodoar');
   }
 
   redirectPrecisoDoacao(){
-    return window.location.replace('http://34.231.173.124/precisodoacao');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/precisodoacao');
   }
 
 }

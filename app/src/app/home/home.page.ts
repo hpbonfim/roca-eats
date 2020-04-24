@@ -12,11 +12,11 @@ export class HomePage {
 
   redirectLogin(){
     
-    return window.location.replace('http://34.231.173.124/login');
+    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/login');
   }
   redirectRegister(){
     this.router.navigate(['/register'])
-    return window.location.href = 'http://34.231.173.124/register';
+    return window.location.href = 'http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/register';
   }
  // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
