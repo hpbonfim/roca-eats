@@ -8,15 +8,13 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   redirectLogin(){
-    
-    return window.location.replace('http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/login');
+    return window.location.replace('#');
   }
   redirectRegister(){
-    this.router.navigate(['/register'])
-    return window.location.href = 'http://ec2-52-67-30-15.sa-east-1.compute.amazonaws.com/register';
+    return window.location.href = '#';
   }
  // textos inicio
   tituloHeader: string = "COLHENDO O MELHOR DE NÓS!";
@@ -62,27 +60,26 @@ export class HomePage {
   subtituloMidia: string = "";
   textoDescricaoMidia: string = "Veja o que estão falando do projeto";
 
-  tituloAbaPrimeiraMidia: string = "GLOBO PLAY";
-  tituloPrimeiraMidia: string = "Diário TV 1ª Edição";
-  textoDescricaoPrimeiraMidia: string = "Produtores rurais adotam medidas para evitar desperdício de produtos";
+  tituloAbaPrimeiraMidia: string = "MÍDIA 1";
+  tituloPrimeiraMidia: string = "...";
+  textoDescricaoPrimeiraMidia: string = "Projeto";
   primeiroTopicoPrimeiraMidia: string = "Exibição em 4 Abr 2020";
 
-  tituloAbaSegundaMidia: string = "O DIÁRIO";
-  tituloSegundaMidia: string = "O Diário de Mogi";
-  textoDescricaoSegundaMidia: string = "Agricultores de Quatinga doam parte da safra após fechamento de feiras";
+  tituloAbaSegundaMidia: string = "MÍDIA 2";
+  tituloSegundaMidia: string = "...";
+  textoDescricaoSegundaMidia: string = "Projeto";
   primeiroTopicoSegundaMidia: string = "Exibição em 1 de abril de 2020";
 
 
-  tituloAbaTerceiraMidia: string = "YOUTUBE";
-  tituloTerceiraMidia: string = "Agro Meeting 1";
-  textoDescricaoTerceiraMidia: string = "As ações que estão sendo feitas em prol dos pequenos agricultores";
-  primeiroTopicoTerceiraMidia: string = "Palestrante: Simone Silotti – Pesquisadora Chefe – Inteligência no Agro";
+  tituloAbaTerceiraMidia: string = "MÍDIA 3";
+  tituloTerceiraMidia: string = "...";
+  textoDescricaoTerceiraMidia: string = "Projeto";
+  primeiroTopicoTerceiraMidia: string = "Info";
   segundoTopicoTerceiraMidia: string = "Exibição em 14/04 às 15H";
 
  
 
   // textos doacao
-  textoVaquinha: string = "Ajude-nos a ajudar ainda mais, precisamos doar para levar mais igualdade a quem necessita de ajuda neste momento."
   tituloRedesSociais: string = "REDES SOCIAIS";
 
   // textos footer

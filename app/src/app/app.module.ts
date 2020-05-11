@@ -1,4 +1,3 @@
-import { ViaCepProvider } from './providers/viacep.provider';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -11,11 +10,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { OpenStreetMapProvider } from './providers/openstreetmap.provider';
-import { IBGEProvider } from './providers/ibge.provider';
-import { XHttpInterceptor } from './providers/xhttpIntercept';
-import { IonicSelectableModule } from 'ionic-selectable';
 
 
 @NgModule({
@@ -23,20 +17,14 @@ import { IonicSelectableModule } from 'ionic-selectable';
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicSelectableModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    HttpClientModule
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    { provide: HTTP_INTERCEPTORS, useClass: XHttpInterceptor, multi: true },
-    ViaCepProvider,
-    OpenStreetMapProvider,
-    IBGEProvider
   ],
   bootstrap: [AppComponent]
 })
